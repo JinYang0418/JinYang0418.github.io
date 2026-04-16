@@ -202,7 +202,7 @@
 </li>
 </ul>
 <h3 id="👀-找-到-我"><a href="#👀-找-到-我" class="headerlink" title="👀 找 到 我"></a>👀 找 到 我</h3><ul>
-<li>📭 邮箱 | <a href="mailto:&#x32;&#53;&#x37;&#49;&#x30;&#48;&#x31;&#x37;&#51;&#x39;&#64;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">2571001739@qq.com</a></li>
+<li>📭 邮箱 | <a href="mailto:&#50;&#53;&#x37;&#49;&#48;&#x30;&#x31;&#55;&#x33;&#57;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">2571001739@qq.com</a></li>
 </ul>
 
       </div>
@@ -215,6 +215,12 @@
     
 
 
+    
+  
+  <div class="comments giscus-container">
+  </div>
+  
+  
 </div>
   </main>
 
@@ -250,6 +256,34 @@
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
 </noscript>
+<script class="next-config" data-name="giscus" type="application/json">{"enable":true,"repo":"JinYang0418/JinYang0418.github.io","repo_id":"R_kgDOSDKEeQ","category":"Announcements","category_id":"DIC_kwDOSDKEec4C643t","mapping":"title","strict":0,"reactions_enabled":1,"emit_metadata":1,"theme":"light","lang":"zh-CN","crossorigin":"anonymous","input_position":"bottom","loading":"lazy"}</script>
+
+<script>
+document.addEventListener('page:loaded', () => {
+  if (!CONFIG.page.comments) return;
+
+  NexT.utils.loadComments('.giscus-container')
+    .then(() => NexT.utils.getScript('https://giscus.app/client.js', {
+      attributes: {
+        async                   : true,
+        crossOrigin             : 'anonymous',
+        'data-repo'             : CONFIG.giscus.repo,
+        'data-repo-id'          : CONFIG.giscus.repo_id,
+        'data-category'         : CONFIG.giscus.category,
+        'data-category-id'      : CONFIG.giscus.category_id,
+        'data-mapping'          : CONFIG.giscus.mapping,
+        'data-strict'           : CONFIG.giscus.strict,
+        'data-reactions-enabled': CONFIG.giscus.reactions_enabled,
+        'data-emit-metadata'    : CONFIG.giscus.emit_metadata,
+        'data-theme'            : CONFIG.giscus.theme,
+        'data-lang'             : CONFIG.giscus.lang,
+        'data-input-position'   : CONFIG.giscus.input_position,
+        'data-loading'          : CONFIG.giscus.loading
+      },
+      parentNode: document.querySelector('.giscus-container')
+    }));
+});
+</script>
 
 </body>
 </html>
