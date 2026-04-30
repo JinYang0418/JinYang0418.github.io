@@ -20,26 +20,26 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="本文面向使用 Hexo + GitHub Pages 搭建静态博客的开发者，完整梳理自定义域名绑定的分步操作，彻底解决每次部署后仓库域名配置被重置的麻烦。">
+    <meta name="description" content="《周易》乃中华传统文化之瑰宝，自传世以来，历经千年流转而经久不衰。但其成书年代久远，文本晦涩深邃，即便是古人学习亦觉吃力，于今人而言更如“天书”。因此，欲入《周易》之门，选对入门书籍至关重要。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="hexo绑定域名">
-<meta property="og:url" content="http://example.com/2026/04/27/hexo%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/index.html">
+<meta property="og:title" content="学易书籍推荐">
+<meta property="og:url" content="http://example.com/2026/04/30/%E5%AD%A6%E6%98%93%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/index.html">
 <meta property="og:site_name" content="JinYang">
-<meta property="og:description" content="本文面向使用 Hexo + GitHub Pages 搭建静态博客的开发者，完整梳理自定义域名绑定的分步操作，彻底解决每次部署后仓库域名配置被重置的麻烦。">
+<meta property="og:description" content="《周易》乃中华传统文化之瑰宝，自传世以来，历经千年流转而经久不衰。但其成书年代久远，文本晦涩深邃，即便是古人学习亦觉吃力，于今人而言更如“天书”。因此，欲入《周易》之门，选对入门书籍至关重要。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2026-04-27T07:04:01.000Z">
-<meta property="article:modified_time" content="2026-04-30T02:35:47.871Z">
+<meta property="article:published_time" content="2026-04-30T02:35:34.000Z">
+<meta property="article:modified_time" content="2026-04-30T02:36:32.969Z">
 <meta property="article:author" content="JinYang">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2026/04/27/hexo%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/">
+<link rel="canonical" href="http://example.com/2026/04/30/%E5%AD%A6%E6%98%93%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2026/04/27/hexo%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/","path":"2026/04/27/hexo绑定域名/","title":"hexo绑定域名"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2026/04/30/%E5%AD%A6%E6%98%93%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/","path":"2026/04/30/学易书籍推荐/","title":"学易书籍推荐"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>hexo绑定域名 | JinYang</title>
+<title>学易书籍推荐 | JinYang</title>
   
 
 
@@ -115,7 +115,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -128,7 +128,6 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A41%EF%BC%9A%E8%B4%AD%E7%BD%AE%E5%9F%9F%E5%90%8D"><span class="nav-number">1.</span> <span class="nav-text">步骤1：购置域名</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A42%EF%BC%9A%E5%9F%9F%E5%90%8D%E8%A7%A3%E6%9E%90%E9%85%8D%E7%BD%AE"><span class="nav-number">2.</span> <span class="nav-text">步骤2：域名解析配置</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A43%EF%BC%9A%E9%85%8D%E7%BD%AE%E5%9F%9F%E5%90%8D%E6%8C%81%E4%B9%85%E5%8C%96%EF%BC%88%E8%A7%A3%E5%86%B3%E9%83%A8%E7%BD%B2%E5%90%8E%E9%87%8D%E7%BD%AE%E9%97%AE%E9%A2%98%EF%BC%89"><span class="nav-number">3.</span> <span class="nav-text">步骤3：配置域名持久化（解决部署后重置问题）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A44%EF%BC%9A%E6%9C%AC%E5%9C%B0%E6%9E%84%E5%BB%BA%E4%B8%8E%E9%83%A8%E7%BD%B2%E6%9B%B4%E6%96%B0"><span class="nav-number">4.</span> <span class="nav-text">步骤4：本地构建与部署更新</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%AD%A5%E9%AA%A45%EF%BC%9A%E7%94%9F%E6%95%88%E9%AA%8C%E8%AF%81"><span class="nav-number">5.</span> <span class="nav-text">步骤5：生效验证</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -174,7 +173,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2026/04/27/hexo%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/04/30/%E5%AD%A6%E6%98%93%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -187,12 +186,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="hexo绑定域名 | JinYang">
+      <meta itemprop="name" content="学易书籍推荐 | JinYang">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          hexo绑定域名
+          学易书籍推荐
         </h1>
 
         <div class="post-meta-container">
@@ -202,15 +201,9 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">发表于</span>
+      
 
-      <time title="创建时间：2026-04-27 15:04:01" itemprop="dateCreated datePublished" datetime="2026-04-27T15:04:01+08:00">2026-04-27</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">更新于</span>
-      <time title="修改时间：2026-04-30 10:35:47" itemprop="dateModified" datetime="2026-04-30T10:35:47+08:00">2026-04-30</time>
+      <time title="创建时间：2026-04-30 10:35:34 / 修改时间：10:36:32" itemprop="dateCreated datePublished" datetime="2026-04-30T10:35:34+08:00">2026-04-30</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -218,7 +211,7 @@
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">技术分享</span></a>
+          <a href="/categories/%E5%AD%A6%E6%98%93%E7%AC%94%E8%B0%88/" itemprop="url" rel="index"><span itemprop="name">学易笔谈</span></a>
         </span>
     </span>
 
@@ -231,65 +224,32 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>本文面向使用 Hexo + GitHub Pages 搭建静态博客的开发者，完整梳理自定义域名绑定的分步操作，彻底解决每次部署后仓库域名配置被重置的麻烦。</p>
+    <div class="post-body" itemprop="articleBody"><p>《周易》乃中华传统文化之瑰宝，自传世以来，历经千年流转而经久不衰。但其成书年代久远，文本晦涩深邃，即便是古人学习亦觉吃力，于今人而言更如“天书”。因此，欲入《周易》之门，选对入门书籍至关重要。</p>
 <span id="more"></span>
 
-<h3 id="步骤1：购置域名"><a href="#步骤1：购置域名" class="headerlink" title="步骤1：购置域名"></a>步骤1：购置域名</h3><p>可选择国内正规域名服务商（阿里云&#x2F;腾讯云&#x2F;华为云）购买心仪域名，新手优先推荐 <code>.com</code>&#x2F;<code>.cn</code> 后缀，辨识度高、兼容性好。</p>
-<blockquote>
-<p>补充说明：若仅用于 GitHub Pages 境外托管，域名无需备案即可完成解析与访问；若后续切换至国内服务器，需先完成域名 ICP 备案。</p>
-</blockquote>
-<h3 id="步骤2：域名解析配置"><a href="#步骤2：域名解析配置" class="headerlink" title="步骤2：域名解析配置"></a>步骤2：域名解析配置</h3><p>这一步的核心是将你的自定义域名指向 GitHub Pages 仓库地址，操作路径为：<strong>域名服务商控制台 → 域名管理 → 解析设置</strong>，新增解析记录，核心配置如下：</p>
-<table>
-<thead>
-<tr>
-<th>记录类型</th>
-<th>主机记录</th>
-<th>记录值</th>
-<th>TTL</th>
-<th>配置说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>CNAME</td>
-<td>@</td>
-<td>你的GitHub Pages仓库地址（如 <code>jinyang0418.github.io.</code>）</td>
-<td>10分钟（默认）</td>
-<td>根域名解析（例：<code>xxx.com</code>）</td>
-</tr>
-<tr>
-<td>CNAME</td>
-<td>www</td>
-<td>你的GitHub Pages仓库地址（如 <code>jinyang0418.github.io.</code>）</td>
-<td>10分钟（默认）</td>
-<td>www二级域名解析（例：<code>www.xxx.com</code>）</td>
-</tr>
-</tbody></table>
-<blockquote>
-<p>关键避坑提醒：</p>
-<ol>
-<li>记录值末尾<strong>必须加英文句号<code>.</code></strong>，否则会导致解析失败；</li>
-<li>记录值仅填写仓库域名，不可加 <code>http/https</code> 前缀；</li>
-<li>主机记录 <code>@</code> 对应根域名，<code>www</code> 对应带www的二级域名，可按需选择，建议两条都配置保证访问兼容性。</li>
-</ol>
-</blockquote>
-<h3 id="步骤3：配置域名持久化（解决部署后重置问题）"><a href="#步骤3：配置域名持久化（解决部署后重置问题）" class="headerlink" title="步骤3：配置域名持久化（解决部署后重置问题）"></a>步骤3：配置域名持久化（解决部署后重置问题）</h3><p>这是绑定域名的核心步骤，若跳过此操作，每次执行 <code>hexo deploy</code> 部署后，GitHub 仓库的自定义域名配置会被自动重置，需要反复手动修改。</p>
-<p>完整操作方法：</p>
-<ol>
-<li>打开本地 Hexo 博客的根目录，进入 <code>source</code> 文件夹；</li>
-<li>在 <code>source</code> 文件夹内新建名为 <code>CNAME</code> 的文件（<strong>必须全大写，无任何后缀名</strong>，不可保存为 <code>CNAME.txt</code> 等格式）；</li>
-<li>打开 CNAME 文件，仅填写你的自定义域名（例：<code>xxx.com</code>），无需加 <code>http/https</code> 前缀、无需加末尾斜杠，保存文件即可。</li>
-</ol>
-<blockquote>
-<p>原理解释：Hexo 执行构建部署时，会将 <code>source</code> 文件夹内的所有文件原样复制到生成的 <code>public</code> 静态目录中，同步推送到 GitHub 仓库，从而永久保留自定义域名配置，不会被部署操作覆盖。</p>
-</blockquote>
-<h3 id="步骤4：本地构建与部署更新"><a href="#步骤4：本地构建与部署更新" class="headerlink" title="步骤4：本地构建与部署更新"></a>步骤4：本地构建与部署更新</h3><p>完成上述配置后，在本地博客根目录打开 Git Bash &#x2F; 终端，依次执行以下命令，将配置更新推送到 GitHub 仓库：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 1. 清理本地缓存与旧的静态文件</span></span><br><span class="line">hexo clean</span><br><span class="line"></span><br><span class="line"><span class="comment"># 2. 生成最新的静态网站文件（可简写为 hexo g）</span></span><br><span class="line">hexo generate</span><br><span class="line"></span><br><span class="line"><span class="comment"># 3. 部署推送到 GitHub 仓库（可简写为 hexo d）</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-
-<h3 id="步骤5：生效验证"><a href="#步骤5：生效验证" class="headerlink" title="步骤5：生效验证"></a>步骤5：生效验证</h3><ol>
-<li><strong>解析生效验证</strong>：本地终端执行 ping 你的域名，若返回的 IP 地址指向 GitHub Pages 服务器，说明解析已生效（解析生效通常需要 1-10 分钟，最长不超过 24 小时）；</li>
-<li><strong>访问验证</strong>：浏览器输入你的自定义域名，若能正常打开 Hexo 博客，说明绑定成功；</li>
-<li><strong>仓库配置验证</strong>：打开 GitHub 博客仓库 → Settings → Pages，可见 Custom domain 栏已自动填充你的自定义域名，无需手动修改。</li>
-</ol>
+<p>今世流传的易学典籍，大抵可分为两大脉络：一者为经传本体的训释、考据与义理阐发，即“经学易”范畴；二者为《周易》象数体系衍生的术数应用之学，即“术数易”范畴。本文专以经学易为核心，为初学者梳理一套循序渐进的入门书单与研习路径，助力搭建系统、中正的易学认知框架，避免误入歧途。</p>
+<hr>
+<p><strong>《周易入门》张善文</strong></p>
+<p>初学者治《易》，首务在于奠立根基、廓清常识。必先明辨《周易》的核心体例：何为“经”（卦画、卦辞、爻辞），何为“传”（十翼），同时对六十四卦卦名、爻位尊卑、三才之道、乘承比应、当位失位等核心基础概念，建立清晰、准确的初步认知，切不可囫囵吞枣、直接跳读经文。</p>
+<p>张善文先生为当代易学大家黄寿祺先生嫡传弟子，深耕易学数十载，其编撰的《周易入门》专为初学者量身而作。全书以平实晓畅的语言，系统解答治易的基础问题，详解研《易》必备的核心常识，匡正初学者常见的认知误区，指明中正的治易路径，毫无晦涩之感，是当代公认的易学启蒙首选读本。</p>
+<p><strong>《周易译注》黄寿祺&#x2F;张善文</strong></p>
+<p>完成启蒙常识的学习、建立基础概念体系后，便需沉心深入《周易》经传原文的逐字逐句研读。《周易》文辞上古，一字多义，古今训诂差异极大，若仅凭白话译本望文生义，极易偏离经文本义、误入歧途。故而，必须以当代学界公认的权威译注本为依托，方能精准契入经文内核。</p>
+<p>黄寿祺先生为近代易学泰斗尚秉和先生的再传弟子，其与弟子张善文先生合著的《周易译注》，是当代易学领域公认的标杆性译注本。全书完整收录《周易》经传全文，以严谨的训诂为根基，参酌千百年來诸家易注精华，将原文译为晓畅的现代汉语，同时辅以详尽的注释与阐解；既讲明《周易》的源流、读易的核心方法，更对每一卦、每一爻的卦象、爻义、内在逻辑，做了深入浅出的梳理与解读。此书兼具学术严谨性与普及性，是初学者通读、精研《周易》全文不可或缺的案头常备典籍。</p>
+<hr>
+<p><strong>《周易集注》来知德</strong></p>
+<p>《周易》的传承历经两千余年发展，形成了象数与义理两大核心脉络：象数学派以卦画、爻象、阴阳五行、错综互体等象数体系为根基，解析经文本义，兼存《周易》本有的卜筮之用；义理学派则以儒家伦理、天地大道为核心，阐发经文中的哲学内涵与人文精神。二者本为体用，象数为《易》之体，义理为《易》之用，互为表里、不可分割。初学者通读经传全文、熟稔基础体例后，便需深入经典注本，而择取的核心准则，必是象数与义理兼顾，不可偏废一端，否则便易落入空疏或拘执的误区。</p>
+<p>明代易学家来知德，隐居万县求溪山中潜心研《易》二十九年，成《周易集注》（后世亦称《来氏易注》）一书，被后世誉为“绝学”。此书最大的价值，在于以“错卦”“综卦”“中爻互体”为核心，重构了完备的象数解读体系，破解了诸多卦爻辞的训释难题；同时又以儒家孔门义理贯通全经，将卦爻象的阴阳变化与人事的进退、吉凶、悔吝紧密结合，真正做到了“以象数明义理，以义理证象数”，实现了象数与义理的圆融统一。此书体例清晰，说理平实，不杂空谈，不涉玄虚，是汉宋之后兼顾象数义理的绝佳注本，更是初学者深入经传、建立完整易学思维的核心典籍。</p>
+<hr>
+<p><strong>《周易古筮考》尚秉和</strong></p>
+<p>《周易》本为卜筮之书，其经传文辞的形成，本就与上古占筮实践密不可分。若仅停留在纯理论的文本训释，便难以真正契入经文的创作语境与核心内涵。故而，在完成经传文本的系统学习后，必须回溯《周易》的本源应用，了解古人占筮、解卦的核心逻辑与方法，方能打通理论与实践的壁垒，更全面、深刻地理解《周易》。</p>
+<p>尚秉和先生为近代象数易学的集大成者，其《周易古筮考》是中国易学史上，对历代占筮案例梳理最为系统、注解最为精当的经典著作。全书完整收录并详加考辨了自春秋《左传》《国语》至明清的历代经典占筮案例，清晰还原了不同时代古人取象、断卦的核心思维与方法，厘清了后世占筮之学的源流演变。此书不仅是研究易学应用的珍贵史料，更能帮助初学者跳出纯文本的理论桎梏，从《周易》本源的应用视角，读懂卦爻辞的吉凶悔吝之本，真正理解《周易》“洁静精微”的大用。</p>
+<hr>
+<p>完成以上四步的系统研习，便已真正踏入易学的门庭，廓清了治《易》的核心路径，此后再研读历代易家经典与各类研究著作，自能得心应手，不致迷失方向。学者可根据自身志趣，择取方向进一步深耕：</p>
+<ul>
+<li>若偏爱象数脉络，可深入研读唐代李鼎祚《周易集解》（汉魏象数易的集大成之作）、清代黄宗羲《易学象数论》（象数体系的系统梳理）、尚秉和《周易尚氏学》（近代象数易的巅峰之作）等经典；</li>
+<li>若侧重义理脉络，可精读魏王弼《周易注》（义理派开山之作）、北宋程颐《伊川易传》（儒家义理易的巅峰）、现代学者金景芳《周易全解》等传世著作。</li>
+</ul>
+<p>治《易》之道，贵在循序渐进、中正不偏，更贵在知行合一、以《易》理照见人事。循着此路径稳步研习，自可逐步构建起完备、系统的个性化易学知识体系，真正走进《周易》所承载的、贯通天地人三才的深邃智慧世界。</p>
 
     </div>
 
@@ -303,14 +263,11 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2026/04/22/Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" rel="prev" title="Hexo添加评论系统">
-                  <i class="fa fa-angle-left"></i> Hexo添加评论系统
+                <a href="/2026/04/27/hexo%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/" rel="prev" title="hexo绑定域名">
+                  <i class="fa fa-angle-left"></i> hexo绑定域名
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2026/04/30/%E5%AD%A6%E6%98%93%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/" rel="next" title="学易书籍推荐">
-                  学易书籍推荐 <i class="fa fa-angle-right"></i>
-                </a>
             </div>
           </div>
     </footer>
