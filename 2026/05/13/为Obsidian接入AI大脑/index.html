@@ -20,22 +20,26 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js" defer></script>
 
-    <meta property="og:type" content="website">
-<meta property="og:title" content="JinYang">
-<meta property="og:url" content="http://example.com/archives/index.html">
+    <meta name="description" content="这里以最通用、最省钱的 Copilot 插件 + DeepSeek 模型​ 组合为例，教你如何完成配置。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="为Obsidian接入AI大脑">
+<meta property="og:url" content="http://example.com/2026/05/13/%E4%B8%BAObsidian%E6%8E%A5%E5%85%A5AI%E5%A4%A7%E8%84%91/index.html">
 <meta property="og:site_name" content="JinYang">
+<meta property="og:description" content="这里以最通用、最省钱的 Copilot 插件 + DeepSeek 模型​ 组合为例，教你如何完成配置。">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-05-13T08:30:25.000Z">
+<meta property="article:modified_time" content="2026-05-13T08:31:45.134Z">
 <meta property="article:author" content="JinYang">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/2026/05/13/%E4%B8%BAObsidian%E6%8E%A5%E5%85%A5AI%E5%A4%A7%E8%84%91/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"archives/index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2026/05/13/%E4%B8%BAObsidian%E6%8E%A5%E5%85%A5AI%E5%A4%A7%E8%84%91/","path":"2026/05/13/为Obsidian接入AI大脑/","title":"为Obsidian接入AI大脑"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>归档 | JinYang</title>
+<title>为Obsidian接入AI大脑 | JinYang</title>
   
 
 
@@ -85,7 +89,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">JinYang</h1>
+      <p class="site-title">JinYang</p>
       <i class="logo-line"></i>
     </a>
   </div>
@@ -111,7 +115,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -124,6 +128,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#01-%E5%BF%85%E5%A4%87%E2%80%9C%E9%80%9A%E8%A1%8C%E8%AF%81%E2%80%9D%E2%80%94%E2%80%94-%E8%8E%B7%E5%8F%96-API-Key"><span class="nav-number">1.</span> <span class="nav-text">01 必备“通行证”—— 获取 API Key</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#02-%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">02 安装插件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#03-%E8%AE%BE%E7%BD%AE-API-%E9%92%A5%E5%8C%99"><span class="nav-number">3.</span> <span class="nav-text">03 设置 API 钥匙</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#04-%E9%85%8D%E7%BD%AE%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A8%A1%E5%9E%8B"><span class="nav-number">4.</span> <span class="nav-text">04 配置自定义模型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#05-%E5%BC%80%E5%A7%8B%E4%BD%BF%E7%94%A8"><span class="nav-number">5.</span> <span class="nav-text">05 开始使用</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -158,170 +163,123 @@
 
     </div>
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 7 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2026/05/13/%E4%B8%BAObsidian%E6%8E%A5%E5%85%A5AI%E5%A4%A7%E8%84%91/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="JinYang">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JinYang">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="为Obsidian接入AI大脑 | JinYang">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          为Obsidian接入AI大脑
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2026<span class="collection-year-count">7</span></span>
+
+      <time title="创建时间：2026-05-13 16:30:25 / 修改时间：16:31:45" itemprop="dateCreated datePublished" datetime="2026-05-13T16:30:25+08:00">2026-05-13</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/" itemprop="url" rel="index"><span itemprop="name">技术分享</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><p>这里以最通用、最省钱的 <strong>Copilot 插件 + DeepSeek 模型</strong>​ 组合为例，教你如何完成配置。</p>
+<span id="more"></span>
+
+<h3 id="01-必备“通行证”——-获取-API-Key"><a href="#01-必备“通行证”——-获取-API-Key" class="headerlink" title="01 必备“通行证”—— 获取 API Key"></a>01 必备“通行证”—— 获取 API Key</h3><p>Obsidian的AI插件本质上是一个“空壳”，它们需要连接到外部的大语言模型（LLM）才能工作。因此，你需要先去大模型服务商那里申请一个 API Key</p>
+<ul>
+<li>访问 <a target="_blank" rel="noopener" href="https://platform.deepseek.com/">DeepSeek</a> 开放平台注册账号；</li>
+<li>进入“API Keys”页面，点击“创建 API Key”；</li>
+<li>复制这串以 <code>sk-</code> 开头的密钥妥善保存。</li>
+</ul>
+<h3 id="02-安装插件"><a href="#02-安装插件" class="headerlink" title="02 安装插件"></a>02 安装插件</h3><p>在 Obsidian 设置 ￫ 社区插件 ￫ 浏览中，搜索 Copilot 并安装启用。</p>
+<h3 id="03-设置-API-钥匙"><a href="#03-设置-API-钥匙" class="headerlink" title="03 设置 API 钥匙"></a>03 设置 API 钥匙</h3><ul>
+<li>进入 Obsidian 设置 ￫ Copilot Settings ￫ Basic Settings ￫ API Keys ￫ Set Keys。 </li>
+<li>将你刚才复制的 DeepSeek API Key 填入对应的框中。</li>
+</ul>
+<h3 id="04-配置自定义模型"><a href="#04-配置自定义模型" class="headerlink" title="04 配置自定义模型"></a>04 配置自定义模型</h3><ul>
+<li>进入 Obsidian 设置 ￫ Copilot Settings ￫ Basic Settings ￫ API Keys ￫ Set Keys；</li>
+<li>将你刚才复制的 DeepSeek API Key 填入对应的框中。</li>
+</ul>
+<h3 id="05-开始使用"><a href="#05-开始使用" class="headerlink" title="05 开始使用"></a>05 开始使用</h3><p>保存设置后，点击左侧菜单栏的机器人图标，右侧就会弹出Chat面板。在下拉菜单中选择你的 DeepSeek 模型，就可以开始愉快地调教你的笔记了！</p>
+<p><strong>最后的一点叮嘱</strong>：无论是 DeepSeek 还是 OpenAI，使用 API 都会产生微小的费用，记得在平台充值一点余额。此外，千万不要把极其私密敏感的密码或个人绝密信息放在笔记里让 AI 处理，以防泄密。</p>
+
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-05-13T16:30:25+08:00"
-              content="2026-05-13">
-          05-13
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/05/13/%E4%B8%BAObsidian%E6%8E%A5%E5%85%A5AI%E5%A4%A7%E8%84%91/" itemprop="url">
-            <span itemprop="name">为Obsidian接入AI大脑</span>
-          </a>
-      </div>
+    <footer class="post-footer">
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2026/05/11/%E7%9F%A5%E6%AD%A2%E8%80%8C%E5%90%8E%E6%9C%89%E5%AE%9A/" rel="prev" title="知止而后有定">
+                  <i class="fa fa-angle-left"></i> 知止而后有定
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-05-11T13:13:16+08:00"
-              content="2026-05-11">
-          05-11
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/05/11/%E7%9F%A5%E6%AD%A2%E8%80%8C%E5%90%8E%E6%9C%89%E5%AE%9A/" itemprop="url">
-            <span itemprop="name">知止而后有定</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-04-30T10:35:34+08:00"
-              content="2026-04-30">
-          04-30
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/04/30/%E5%AD%A6%E6%98%93%E4%B9%A6%E7%B1%8D%E6%8E%A8%E8%8D%90/" itemprop="url">
-            <span itemprop="name">学易书籍推荐</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-04-27T15:04:01+08:00"
-              content="2026-04-27">
-          04-27
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/04/27/Hexo%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D/" itemprop="url">
-            <span itemprop="name">Hexo绑定域名</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-04-22T11:46:50+08:00"
-              content="2026-04-22">
-          04-22
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/04/22/Hexo%E6%B7%BB%E5%8A%A0%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F/" itemprop="url">
-            <span itemprop="name">Hexo添加评论系统</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-04-20T13:38:24+08:00"
-              content="2026-04-20">
-          04-20
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/04/20/%E5%AD%A6%E6%98%93%E5%9F%BA%E6%9C%AC%E5%8A%9F/" itemprop="url">
-            <span itemprop="name">学易基本功</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2026-04-15T14:45:24+08:00"
-              content="2026-04-15">
-          04-15
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2026/04/15/%E4%B8%BA%E4%BB%80%E4%B9%88%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BABlog/" itemprop="url">
-            <span itemprop="name">为什么搭建个人Blog</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
+
+
+
+
+    
+  
+  <div class="comments giscus-container">
   </div>
   
   
-  
-
 </div>
   </main>
 
